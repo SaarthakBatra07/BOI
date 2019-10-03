@@ -1,218 +1,134 @@
 html{
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;}
+      margin:0;
+      padding:0;
+      scroll-behavior: smooth;}
 
 body { 
-  background-color: rgb(12, 0, 50);
-  padding:0;
-  margin:0;}  
+    background-color: rgb(12, 0, 50);
+    padding:0;
+    margin:0;}  
 
 /* Header */
 .Header{
-  position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
     width:100%;
     height:auto;
-  padding: 0px;
-  margin:0px;
-  background-color: rgba(0, 58, 145, 0.877);
-  z-index: 40;}
+    padding: 0px;
+    margin:0px;
+    background-color: rgba(0, 58, 145, 0.877);
+    z-index: 50;}
 
 .Header ul {
-  line-height: 0px; 
-  padding:4px 4px;
-  margin: 0px;}
+    line-height: 0; 
+    padding: 4px;
+    margin: 0;}
 
 .Header ul li{
-  width:20px;
-  height:20px;
-  margin: 0px;
-  display: inline-block;}
+    line-height: 0;
+    padding: 0;
+    margin: 0px;
+    display: inline-block;}
 
-.Header ul li.Phn{
-  float: right;
-    height:auto;
-    width:auto;
-  margin: 0px;
-  background-color: transparent;}
+.Header ul li:nth-child(3){
+    float: right;
+      height:auto;
+      width:auto;
+    margin: 0px;
+  /*background-color: transparent;*/}
 
-.Header ul li.Phn img{
-  background-color: white;
-  border-radius: 100%;
-  padding:1px;
-  margin: 0px;}
+.Header ul li p{
+    position: relative;
+      bottom:4px; 
+    color:white;
+    line-height: 0px;
+    padding:0;
+    margin:0;
+}
 
-.Header ul li.Phn p{
-  display:inline-block;
-  position: relative;
-    bottom:4px;
-  line-height: 0px;
-  padding: 0px;
-  margin:0px;
-  color:white;
-  background-color: transparent;}
-
-#gap{
-  display: inline-block;
-  visibility: hidden;}
-
-/* Navigation Menu */
-.Navigation_menu{
-  font-size: 0;
-  position: fixed;
-    top:0px;
-    left:0px;
-    box-shadow: 2px 5px 15px  rgb(66, 63, 63);  
-  background-color:rgba(0, 129, 204, 0.24)!important;
-  width:100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  z-index: 20;}
-
-.Logo img{ 
-float:left;
-display:block;
-width:20%;
-height:45px;
-padding:4px;
-margin: 0px;}
-
-.Navigation_menu ul{font-size: initial!important;}
-
-.Navigation_menu ul li{
-display:block;
-float:right;
-list-style-type: none;
-width:auto;
-height: auto;
-padding:0;
-margin:0px 10px 0px 20px;}
-
-.Navigation_menu ul li a{
-text-decoration: none;
-color:rgb(255, 255, 255);
-font-family: 'Lato', sans-serif;
-font-weight: normal;
-text-transform: capitalize;
-font-size: auto;
-height:100%;
-padding:15px 10px 20px 10px;
-margin:0px;
-line-height: 0px;
--webkit-transition: color .25s;
--moz-transition: color .25s;
--ms-transition: color .25s;
--o-transition: color .25s;
-transition: color .25s;}
-
-.Navigation_menu ul li a:hover{
-color:black;
-font-weight: normal;
-/*box-shadow: 1px 1px 10px rgb(66, 63, 63);*/}
-
-/*Navigation Animation*/
-.Navigation_menu ul li::after{
-  content:"";
-  float:left;
-  position: relative;
-    top:4px;
-    height:2px;
-    width:0;
-  background-color: black;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;} 
-
-.Navigation_menu ul li:hover::after{width: 100%;}  
+.Header ul li p img{
+    position: relative;
+      top:3px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 1px;
+  }
 
 /*Main Home Screen*/
 .Home{
-  font-size: 0;
-  position: relative;
-    top: 0;
-    left: 0;
-  margin: 0;
+    position: relative;
+    width:98.7vw;
     height:auto;
-    width:100%;
-  z-index:30;}
+    margin: 0;
+    padding: 0;
+    background-color: white;}
 
-.Sc1{line-height: 0px;}
+.Home img{
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width:100%;}
 
 .Home-Front{
-  position: absolute;
-    top:0;
-    left:0px;
-  font-size: initial!important;
-    width:100%;
-  overflow: auto;
-  background-color: rgba(0, 10, 15, 0.26)!important;}
-
+    position: absolute;
+      top:0;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background-color: rgba(0, 10, 15, 0.26)!important;}
+  
 #Main{
-  position: relative;
-  color:white;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-    font-size:500%;
-    width:auto;
-    height:auto;
-    letter-spacing: 2px;
-  opacity: 0;
-  margin:15.5% 0% -1% 8%;
-  transition: margin .5s .25s ease-in-out,
-              opacity 1s .25s ease-in-out;
-  will-change: margin, opacity;
-}
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+      font-size:6vw;
+      letter-spacing: 2px;
+    width:100%;
+    text-align: center;
+    color:white;
+    opacity: 0;
+    margin:15% 0 -3% 0;
+    transition: margin .5s .25s ease-in-out,
+                opacity 1s .25s ease-in-out;
+    will-change: margin, opacity;}
+
 
 #Main.is-visible {
   opacity: 1;
-  margin:12.5% 0% 2% 8%;
+  margin:12% 0 0 0;
 }
 
 #Sub{
-  position: relative;
-  float:left;
-  color:white;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  line-height: 150%;
-  letter-spacing: 4px;
-  word-spacing: 4px;
-    font-size:70%;
-    width:auto;
-    overflow: hidden;
-    height:auto;
     text-align: center;
-  opacity: 0;
-  margin:7% 0% 15.5% 0%;
-  transition: margin 1s .25s ease-in-out,
-              opacity 1s .5s ease-in-out;
-  will-change: margin, opacity;
- }
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+      line-height: 1vw;
+      letter-spacing: 4px;
+      word-spacing: 4px;
+      font-size:.75vw;
+    width:100%;
+    color:white;
+    opacity: 0;
+    margin:10% 0 -5% 0;
+    transition: margin 1s .25s ease-in-out,
+                opacity 1s .5s ease-in-out;
+    will-change: margin, opacity;}
 
  #Sub.is-visible {
   opacity: 1;
-  margin:2.5% 0% 20% 0%;
+  margin:5% 0 0 0;
 }
 
 #Low{
-  position: Absolute;
-    top:75%;
-    left:44.5%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size:1.5vw; 
   color:white;
-  font-family: 'Lato', sans-serif;
-  padding:2px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-    font-size:125%;
-    width:auto;
-    height:auto;
   opacity: 0;
-  margin:5% 0% -5% 0%;
+  margin:15% 0 -7% 0;
   transition: margin 1.5s .25s ease-in-out,
               opacity 1.5s .75s ease-in-out;
   will-change: margin, opacity;
@@ -220,30 +136,28 @@ font-weight: normal;
 
 #Low.is-visible {
   opacity: 1;
-  margin:0;
+  margin:8% 0 0 0;
 }
 
-.Image{
-  background-color: black;
-  margin:0px;
-  padding:0px;
+.Home-Front p:nth-child(4){
+    position: relative;
+    margin:2% 0 0 0;
     width:100%;
-    height:auto;
-  line-height: 0px;}
+    text-align: center;
+    line-height: 0px;}
+
 
 #Scroll{
-  position: absolute;
-    top: 85%;
-    left:48.25%;
+    position: absolute;
+      left:48%;
   text-decoration: none;  
-    font-size: 35px;
+    font-size: 3vw;
     font-weight: normal;
   border-color: black;
   border-width: 2px;
   border-style: solid;
-  margin: 0px;
-  padding: 15px 14px 30px 14px;
-  z-index: 10;
+  margin: -2px 0 2px 0;
+  padding: 0.4em .4em .9em .4em;/*.1em .4em .2em .4em*/
   color:Black;
   background-color: transparent;
   -webkit-transition: border-color, font-weight, background-color .25s;
@@ -252,934 +166,50 @@ font-weight: normal;
   -o-transition: border-color, font-weight, background-color .25s;
   transition: border-color, font-weight, background-color .25s;
   -webkit-animation-name: Anime-Scroll; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;/* Safari 4.0 - 8.0 */
-  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
   -moz-animation-name: Anime-Scroll; 
-  -moz-animation-duration: 2s; 
+  -moz-animation-duration: 4s; 
   -moz-animation-fill-mode: forwards; 
   -moz-animation-iteration-count:infinite; 
-  -moz-animation-timing-function: linear;
+  -moz-animation-timing-function: ease-in-out;
   -ms-animation-name: Anime-Scroll; 
-  -ms-animation-duration: 2s; 
+  -ms-animation-duration: 4s; 
   -ms-animation-fill-mode: forwards; 
   -ms-animation-iteration-count:infinite; 
-  -ms-animation-timing-function: linear;
+  -ms-animation-timing-function: ease-in-out;
   -o-animation-name: Anime-Scroll; 
-  -o-animation-duration: 2s; 
+  -o-animation-duration: 4s; 
   -o-animation-fill-mode: forwards; 
   -o-animation-iteration-count:infinite; 
-  -o-animation-timing-function: linear;
+  -o-animation-timing-function: ease-in-out;
   animation-name: Anime-Scroll;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: linear;}
+  animation-timing-function: ease-in-out;}
 
 #Scroll:hover{
-  background-color: white;
-  border-color: white;
-  -webkit-animation-name: Anime-Scroll; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: 1;/* Safari 4.0 - 8.0 */
-  -moz-animation-name: Anime-Scroll; 
-  -moz-animation-iteration-count:1; 
-  -ms-animation-name: Anime-Scroll; 
-  -ms-animation-iteration-count:1; 
-  -o-animation-name: Anime-Scroll; 
-  -o-animation-iteration-count:1; 
-  animation-name: Anime-Scroll;
-  animation-iteration-count: 1;}
+    background-color: white;
+    border-color: white;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count:1; 
+    -ms-animation-iteration-count:1; 
+    -o-animation-iteration-count:1; 
+    animation-iteration-count: 1;}
 
 .H1_1{
-  position: absolute;
-    top:95%;
-    left:0;
+    position: relative;
+        left:0;
     width:100%;
     height:40px;
-  margin:0px;
-  background-color: white;}
+    margin-top:-3%;
+    background-color: white;}
 
-.Counter{
-  font-size: 0!important;
-  position: relative;
-    top: 0;
-    width:100%;
-    height:68px;
-  margin: 0;
-  padding: 0;
-  z-index: 35;
-  background-color:white;}
 
-/*About Us*/
-.Page1{
-  font-size: 0!important;
-  position: relative;
-    top: 0;
-    height:100%;
-    width:100%;
-  background-color: white;} 
-  
-.Resume1{
-  position: absolute;
-    top:12%;
-    right:25%;
-    width: 24%;
-    height: auto;
-  box-shadow: 10px 20px 20px  black;}
-  
-.Resume2{
-  position: absolute;
-    top:15%;
-    right:25%;
-    width: 24%;
-    height: auto;
-  box-shadow: 5px 10px 20px  black;}
-
-.Resume3{
-  position: absolute;
-    top:16%;
-    right:25%;
-    width: 21%;
-    height: auto;
-  box-shadow: 5px 10px 20px  black;}
-
-.Resume4{
-  position: absolute;
-    top:19%;
-    right:25%;
-    width: 21%;
-    height: auto;
-  box-shadow: 5px 10px 20px  black;}
-
-.Resume5{
-  position: absolute;
-    top:21%;
-    right:25%;
-    width: 18%;
-    height: auto;
-  box-shadow: 5px 10px 20px  black;}
-
-.Magnifying-Glass{
-  position: absolute;
-    left:55%;
-    top:-48%;
-    height:50%;
-    width:30%;
-  background-color: transparent;}
-
-.Image2{
-  display: inline-block;
-  visibility: hidden;
-  position: relative;
-    top:0px;
-    left:0px;
-    width:100%;
-  background-color: black;
-  margin:0px;
-  padding:0px;
-  line-height: 0px;}
-  
-.Sc2{line-height: 0px;}
-
-#Scroll2{
-  position: absolute;
-    top:88%;
-    left:48.25%;
-  text-decoration: none;  
-    font-size: 35px;
-    font-weight: normal;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
-  margin: 0px;
-  padding: 20px 14px 25px 14px;
-  z-index: 10;
-  color:Black;
-  background-color: transparent;
-  -webkit-transition: border-color, font-weight, background-color .25s;
-  -moz-transition: border-color, font-weight, background-color .25s;
-  -ms-transition: border-color, font-weight, background-color .25s;
-  -o-transition: border-color, font-weight, background-color .25s;
-  transition: border-color, font-weight, background-color .25s;
-  -webkit-animation-name: Anime-Scroll; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: infinite;/* Safari 4.0 - 8.0 */
-  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-  -moz-animation-name: Anime-Scroll; 
-  -moz-animation-duration: 2s; 
-  -moz-animation-fill-mode: forwards; 
-  -moz-animation-iteration-count:infinite; 
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: Anime-Scroll; 
-  -ms-animation-duration: 2s; 
-  -ms-animation-fill-mode: forwards; 
-  -ms-animation-iteration-count:infinite; 
-  -ms-animation-timing-function: linear;
-  -o-animation-name: Anime-Scroll; 
-  -o-animation-duration: 2s; 
-  -o-animation-fill-mode: forwards; 
-  -o-animation-iteration-count:infinite; 
-  -o-animation-timing-function: linear;
-  animation-name: Anime-Scroll;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;}
-
-#Scroll2:hover{
-  background-color: white;
-  border-color: white;
-  -webkit-animation-name: Anime-Scroll; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: 1;/* Safari 4.0 - 8.0 */
-  -moz-animation-name: Anime-Scroll; 
-  -moz-animation-iteration-count:1; 
-  -ms-animation-name: Anime-Scroll; 
-  -ms-animation-iteration-count:1; 
-  -o-animation-name: Anime-Scroll; 
-  -o-animation-iteration-count:1; 
-  animation-name: Anime-Scroll;
-  animation-iteration-count: 1;}
-
-/*Page1 Content*/
-.Para1 {
-  font-size: initial!important;
-  z-index:2;
-  position: absolute;
-    top:5%;
-    left:2%;
-    width:45%;
-    font-family: 'Lato', sans-serif;
-  margin: 0px;
-  padding: 0px;
-  color: black;
-  background-color:transparent;
-}
-  
-#HP1{
-  position: relative;
-  text-transform: uppercase;
-    font-size:500%;
-  background-color: transparent;
-  opacity: 0;
-  margin:14.5% 0 0% 6%;
-  transition: margin .75s .25s linear,
-              opacity 1s .25s ease-in-out;
-   will-change: margin, opacity; 
-}
-  
-#HP1.is-visible {
-  opacity: 1;
-  margin:8.5% 0 6% 6%;
-  
-}
-
-#P1P1{
-  line-height: 150%;
-  font-size:90%;
-  opacity: 0;
-  margin:15% 0 0 0;
-  transition: margin 1s .5s linear,
-              opacity .75s .5s ease-in-out;
-  will-change: margin, opacity;}
-
-#P1P1.is-visible {
-  opacity: 1;
-  margin:10% 0 0 0;
-}
-
-#P2P1{
-  line-height: 150%;
-  font-size:90%;
-  opacity: 0;
-   transition: opacity .75s .5s ease-in-out;
-  will-change: opacity;}
-
-#P2P1.is-visible {
-  opacity: 1;
-}
-
-.X1_1{
-  position: absolute;
-    top:10%;
-    left:0;
-    width:10%;
-    height:22%;
-  margin:0px;
-  background-color: #c1c8e4;}
-
-.X1_2{
-  position: absolute;
-    top:0;
-    left:50%;
-    width:50%;
-    height:100%;
-  margin:0px;
-  background-color: #c1c8e4;}
-
-.X1_3{
-  position: absolute;
-    top:12%;
-    left:4%;
-    width:10%;
-    height:18%;
-  margin:0px;
-  background-color: white;}
-
-/*Pag1 Animations*/
-.Page1:hover > .Resume5{
--webkit-animation-name: Anime1; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime1; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime1; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime1; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime1;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume4{
--webkit-animation-name: Anime2; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime2; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime2; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime2; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime2;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume3{
--webkit-animation-name: Anime3; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime3; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime3; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime3; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime3;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume2{
--webkit-animation-name: Anime4; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime4; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime4; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime4; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime4;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume1{
--webkit-animation-name: Anime5; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--moz-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime5; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--ms-animation-name: Anime5; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
--o-animation-name: Anime5; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--webkit-animation-iteration-count:1; 
-animation-name: Anime5;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover >.Mag-area .Magnifying-Glass{
--webkit-animation-name: Anime6; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime6; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime6; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime6; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime6;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-/* Services */
-.Page2{
-  font-size: 0;
-  position: relative;
-    top:0px;
-  margin:0px;
-  padding:0px;
-  background-color: #282828;
-overflow: visible;}
-
-.Image3{
-  display: inline-block;
-  visibility: hidden;
-  position: relative;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:auto;
-  margin:0px;
-  padding:0px;}
-
-.Magnifying-Glass2-Back{
-  position:absolute;
-  overflow: visible;
-    top:63%;
-    right:30%;
-    width:auto;
-    height:auto;
-  padding: 0px;
-  margin:0px;
-  z-index:25;}
-
-#Scroll3{
-  padding:2px;
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  text-decoration: none;  
-  margin: 0px;
-  color:white;
-  background-color: transparent;
-  -webkit-transition: border-color, font-weight, background-color .25s;
-  -moz-transition: border-color, font-weight, background-color .25s;
-  -ms-transition: border-color, font-weight, background-color .25s;
-  -o-transition: border-color, font-weight, background-color .25s;
-  transition: border-color, font-weight, background-color .25s;
-  animation-name: Anime-Scroll3_;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;}
-
-#Scroll3:hover{
-  background-color: white;
-  color: black;}
-
-.Front1{
-  position: absolute;
-  display: inline-block;
-  overflow: hidden;
-    width:100%;
-    top:70%;
-    right:0%;
-  padding:0px;
-  margin:0px;
-  visibility:visible;}
-
-.Front1 img{
-  display:inline-block;
-  position: relative;
-    left:13.5%;
-    width:5%;
-    height:auto;
-  margin:0 8% 0 0;
-  padding:0px;
-  z-index:20;
-  background-color: transparent;
-animation-name: Anime7;
-animation-duration: .5s;
-animation-iteration-count: infinite;
-animation-fill-mode: backwards;
-animation-timing-function: linear;
--webkit-animation-name: Anime7;
--webkit-animation-duration: .5s;
--webkit-animation-iteration-count: infinite;
--webkit-animation-fill-mode: backwards;
--webkit-animation-timing-function: linear;
--moz-animation-name: Anime7;
--moz-animation-duration: .5s;
--moz-animation-iteration-count: infinite;
--moz-animation-fill-mode: backwards;
--moz-animation-timing-function: linear;
--ms-animation-name: Anime7;
--ms-animation-duration: .5s;
--ms-animation-iteration-count: infinite;
--ms-animation-fill-mode: backwards;
--ms-animation-timing-function: linear;
--o-animation-name: Anime7;
--o-animation-duration: .5s;
--o-animation-iteration-count: infinite;
--o-animation-fill-mode: backwards;
--o-animation-timing-function: linear;}
-
-.ManL{margin-right:0px!important;}
-
-.X2_1{
-  position: absolute;
-    top:10%;
-    left:0;
-    width:10%;
-    height:22%;
-  margin:0px;
-  background-color: #b8b7bb;}
-
-.X2_2{
-position: absolute;
-  top:66%;
-  left:0;
-  width:100%;
-  height:1%;
-margin:0px;
-box-shadow: 0 0px 10px 5px rgba(255, 255, 0, 0.349), 0 20px 20px 10px rgba(248, 248, 104, 0.363) , 0 30px 30px 20px rgba(253, 253, 139, 0.342), 0 40px 40px 30px rgba(245, 245, 162, 0.342), 0 50px 50px 40px rgba(248, 248, 180, 0.308), 0 60px 60px 50px rgba(255, 255, 236, 0.308);
-background-color: rgba(255, 255, 0, 0.589);
-z-index:15;}
-
-.X2_3{
-  position: absolute;
-    top:36%;
-    left:0;
-    width:50%;
-    height:30%;
-  margin:0px;
-  background-color: #282828;
-  z-index:20;}
-
-.X2_4{
-  position: absolute;
-    top:40%;
-    left:52%;
-    width:35%;
-    height:40%;
-  transform :rotateZ(20deg);
-  margin:0px;
-  background-color: #4c495d;
-  z-index:20;}
-
-.X2_5{
-  position: absolute;
-    top:40%;
-    left:12%;
-    width:35%;
-    height:40%;
-  transform :rotateZ(160deg);
-  margin:0px;
-  background-color: #282828;
-  z-index:20;}
-
-.X2_6{
-  position: absolute;
-    top:60%;
-    left:82%;
-    width:18%;
-    height:35%;
-  margin:0px;
-  background-color: #4c495d;
-  z-index:20;}
-
-.X2_7{
-  position: absolute;
-    top:65%;
-    left:0;
-    width:17%;
-    height:30%;
-  margin:0px;
-  background-color: #282828;
-  z-index:20;}
-
-.X2_8{
-  position: absolute;
-    top: 0;
-    right:0;
-    width:50%;
-    height:100%;
-  margin:0px;
-  background-color: #4c495d;
-z-index: 10;}
-
-.X2_9{
-  position: absolute;
-    top:13%;
-    left:3%;
-    width:40%;
-    height:16%;
-  margin:0px;
-  background-color: #282828;}
-
-
-.Para2{
-  font-size: initial!important;
-  Position:absolute;
-    top:5%;
-    left:0px;
-    width:100%;
-    font-family: 'Lato', sans-serif;
-  margin: 0px;
-  padding: 0;
-  z-index: 25;
-  color:white;
-  background-color:transparent;animation-name: Anime-Para;
-  }
-
-#HP2{
-  padding-left: 2%;
-  text-transform: uppercase;
-    font-size:500%;
-  opacity: 0;
-  margin:8% 0 .5% 3%;
-  transition: margin .75s .25s linear,
-              opacity 1s .25s ease-in-out;
-   will-change: margin, opacity; 
-}
-
-#HP2.is-visible {
-  opacity: 1;
-  margin:4% 0 4.5% 3%;}
-
-
-#P1P2{
-   line-height: 150%;
-   font-size:90%;
-  opacity: 0;
-  margin: 6% 2% 0 2%;
-  transition: margin 1s .75s linear,
-              opacity 1s .75s ease-in-out;
-  will-change: margin, opacity;}
-
-#P1P2.is-visible {
-  opacity: 1;
-  margin:4% 2% 0 2%;
-}
-
-#P2P2{
-  margin-left:2%;
-  margin-right:2%;
-   line-height: 150%;
-   font-size:90%;
-   opacity: 0;
-   transition: opacity 1s .75s ease-in-out;
-  will-change: opacity;}
-
-#P2P2.is-visible {
-  opacity: 1;
-}
-
-#Low3{
-  padding:0;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-    font-size:100%;
-    width:auto;
-    height:auto;
-  opacity: 0;
-  margin: 4% 0 -2% 45.5%;
-  transition: margin 1.5s .25s ease-in-out,
-              opacity 1.5s .25s ease-in-out;
-  will-change: margin, opacity;}
-
-#Low3.is-visible {
-  opacity: 1;
-  margin:2% 0% 0% 45.5%;
-}
-
-/* Page3 */
-.Page3{
-  position: relative;
-  top:50px;
-  margin:0px;
-  padding:0px;
-  z-index: 7;
-  height:auto;
-  background-color: #282828;}
-
-.Table1 {
-  position: absolute;
-    top:14%;
-    width:100%;
-  table-layout: fixed;}
-
-.Table1 a{
-  font-family: 'Lato', sans-serif;
-  text-decoration:none;
-  color:black;}
-
-.S1-Back p, .S2-Back p, .S3-Back p, .S4-Back p, .S5-Back p, .S6-Back p{
-  font-family: 'Lato', sans-serif;
-    font-size: 200%;}
-
-.Table1 h1{margin:50% 0% 50% 0%;}
-
-.Table1 img{
-    width:55%;
-  margin-top:30%;
-  padding:0px;}
-
-.Table1 td{
-  text-align: center;
-  letter-spacing: 0px;
-  padding: 0px;
-  font-size:60%;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
-transform-style: preserve-3d;
--webkit-transform-style: preserve-3d;
--moz-transform-style: preserve-3d;
--ms-transform-style: preserve-3d;
--o-transform-style: preserve-3d;
-transition: transform .8s;
--webkit-transition: transform .8s;
--moz-transition: transform .8s;
--ms-transition: transform .8s;
--o-transition: transform .8s;}
-
-.Table1 td:hover{
-transform: rotateY(180deg);
--webkit-transform: rotateY(180deg);
--moz-transform: rotateY(180deg);
--ms-transform: rotateY(180deg);
--o-transform: rotateY(180deg);}
-
-.Table1 td div{
-backface-visibility: hidden;
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--ms-backface-visibility: hidden;
--o-backface-visibility: hidden;}
-
-.Table1 tr{
-perspective: 1500px;
--webkit-perspective: 1500px;
--moz-perspective: 1500px;
--ms-perspective: 1500px;
--o-perspective: 1500px;}
-
-.S1-Back, .S2-Back, .S3-Back, .S4-Back, .S5-Back, .S6-Back{
-  position: absolute;
-    top:15%;
-transform: rotateY(180deg);
--webkit-transform: rotateY(180deg);
--moz-transform: rotateY(180deg);
--ms-transform: rotateY(180deg);
--o-transform: rotateY(180deg);}
-
-.S1-Back a p{
-  position: relative;
-  top:-40px;
-  padding: 10px;
-  margin:0;}
-
-/*Life At Buleocean*/
-.Page4{
-  position: relative;
-    top:0;
-  z-index:7;
-  margin:0px;
-  padding-top:0px;
-  /*background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;*/
-  background-color: white;}
-
-.Image4{
-  display: inline-block;
-  visibility: hidden;
-  position: relative;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:auto;
-  margin:0px;
-  padding:0px;}
-
-.Image5{
-  display: inline-block;
-  position: absolute;
-    top:6%;
-    left:1%;
-    width:62%;
-    height:91%;
-  padding:0!important;
-  opacity: 0;
-  margin:2% 0 0 0;
-  transition: margin .75s .1s linear,
-              opacity .75s .1s ease-in-out;
-   will-change: margin, opacity; 
-}
-  
-.Image5.is-visible {
-  opacity: 1;
-  margin:0;
-}
-
-.Para3{
-  position: absolute;
-    top:10%;
-    left:45%;
-    width:50%;
-    font-family: 'Lato', sans-serif;
-  margin: 0px;
-  padding: 0px;}
-
-#HP3{
-  text-transform: uppercase;
-    font-size:300%;
-  opacity: 0;
-  margin:8% 0 0 0;
-  transition: margin .75s .5s linear,
-              opacity 1s .5s ease-in-out;
-   will-change: margin, opacity; 
-}
-  
-#HP3.is-visible {
-  opacity: 1;
-  margin:4% 0 0 0;
-}
-
-#HP3::after{
-  content:"";
-  float:left;
-  margin-top:2%;
-    height:2px;
-    width:100%;
-  background-color: black;}
-
-#P1P3{
-  margin-top:10%;
-  line-height: 200%;
-  opacity: 0;
-  margin: 14% 0 0 0;
-  transition: margin .75s .5s linear,
-              opacity 1s .5s ease-in-out;
-   will-change:  opacity; 
-}
-  
-#P1P3.is-visible {
-  opacity: 1;
-  margin:10% 0 0 0;
-}
-  
-.X10{
-  position: absolute;
-    top:-16px;
-width:100%;
-height: 55px;
-background-color: #282828;}
-
-
-/*Conact Us*/
-.Page5{
-  position: relative;
-    top:20px;
-  z-index:7;
-  margin:0px;
-  padding-top:0px;
-  background-color: white;}
-
-.Image6{
-  display: inline-block;
-  visibility: hidden;
-    width:100%;
-    height:auto;
-  margin:0px;
-  padding:0px;}
-
-#H1P4{
-  font-family: 'Lato', sans-serif;
-  position: absolute;
-    top:0;
-  text-transform: uppercase;
-  font-size:300%;
-  font-weight: 100;
-  opacity: 0;
-  margin:10% 0 0 35%;
-  transition: margin .75s .5s linear,
-              opacity 1s .5s ease-in-out;
-   will-change: margin, opacity; 
-}
-  
-#H1P4.is-visible {
-  opacity: 1;
-  margin:5% 0 0 35%;
-}
-
-#H1P4::after{
-  content:"";
-  float:left;
-  margin-top:2%;
-    height:2px;
-    width:100%;
-  background-color: black;}
-
-.Map{
-  position: absolute;
-    top:15%;
-    width:100%;
-  margin:0 0 0 0;
-  height:400px;}
-
-.footer{
-  position: absolute;
-    bottom:0px;
-    width:100%;
-  margin:0;
-  background-color: rgb(12, 0, 50);
-  color:rgb(136, 136, 136);
-  padding:8px 0 8px 0;
-  font-family: 'Lato', sans-serif;
-  font-size:70%;
-  font-weight: 100;
-}
-
-/*Animation definations*/
+  /*Animation definations*/
 /* Standard syntax */
 @keyframes Anime1 {100% { right:2%;}}
 @keyframes Anime2 {100% { right:5%;}}
@@ -1188,7 +218,7 @@ background-color: #282828;}
 @keyframes Anime5 {100% { right:25%;}}
 @keyframes Anime6 {100% { top:45%;}}
 @keyframes Anime7 {100% { left:0%}}
-@keyframes Anime-Scroll {0% {padding: 20px 14px 25px 14px;} 25% {padding: 25px 14px 20px 14px;} 50% {padding: 20px 14px 25px 14px;} 75%{padding: 15px 14px 30px 14px;} 100% {padding: 20px 14px 25px 14px;}}
+@keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 @keyframes Anime-Scroll3 {0%{color:white;} 50%{color:black;} 100% {color:white;}}
 @keyframes Anime-Home {0% {color:white;} 50%{font-weight: bold;} 100% {color:white;}}
 @keyframes Anime-Home3_1 {0% {margin:15% 0% 2% 8%;opacity:0;} }
@@ -1205,7 +235,7 @@ background-color: #282828;}
 @-webkit-keyframes Anime5 {100% { right:25%;}}
 @-webkit-keyframes Anime6 {100% { top:45%;}}
 @-webkit-keyframes Anime7 {100% { left:0%}}
-@-webkit-keyframes Anime-Scroll {0% {padding: 20px 14px 25px 14px} 25% {padding: 25px 14px 20px 14px;} 50% {padding: 20px 14px 25px 14px} 75%{padding: 15px 14px 30px 14px} 100% {padding: 20px 14px 25px 14px}}
+@-webkit-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
 @-moz-keyframes Anime1 {100% { right:2%;}}
 @-moz-keyframes Anime2 {100% { right:5%;}}
@@ -1214,7 +244,7 @@ background-color: #282828;}
 @-moz-keyframes Anime5 {100% { right:25%;}}
 @-moz-keyframes Anime6 {100% { top:45%;}}
 @-moz-keyframes Anime7 {100% { left:0%}}
-@-moz-keyframes Anime-Scroll {0% {padding: 20px 14px 25px 14px} 25% {padding: 25px 14px 20px 14px;} 50% {padding: 20px 14px 25px 14px} 75%{padding: 15px 14px 30px 14px} 100% {padding: 20px 14px 25px 14px}}
+@-moz-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
 @-ms-keyframes Anime1 {100% { right:2%;}}
 @-ms-keyframes Anime2 {100% { right:5%;}}
@@ -1223,7 +253,7 @@ background-color: #282828;}
 @-ms-keyframes Anime5 {100% { right:25%;}}
 @-ms-keyframes Anime6 {100% { top:45%;}}
 @-ms-keyframes Anime7 {100% { left:0%}}
-@-ms-keyframes Anime-Scroll {0% {padding: 20px 14px 25px 14px} 25% {padding: 25px 14px 20px 14px;} 50% {padding: 20px 14px 25px 14px} 75%{padding: 15px 14px 30px 14px} 100% {padding: 20px 14px 25px 14px}}
+@-ms-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
 @-o-keyframes Anime1 {100% { right:2%;}}
 @-o-keyframes Anime2 {100% { right:5%;}}
@@ -1232,5 +262,5 @@ background-color: #282828;}
 @-o-keyframes Anime5 {100% { right:25%;}}
 @-o-keyframes Anime6 {100% { top:45%;}}
 @-o-keyframes Anime7 {100% { left:0%}}
-@-o-keyframes Anime-Scroll {0% {padding: 20px 14px 25px 14px;} 25% {padding: 25px 14px 20px 14px;} 50% {padding: 20px 14px 25px 14px;} 75%{padding: 15px 14px 30px 14px;} 100% {padding: 20px 14px 25px 14px;}}/*
+@-o-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
