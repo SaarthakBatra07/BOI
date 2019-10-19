@@ -308,7 +308,11 @@ color:black;
     right:25%;
     width: 24%;
     height: auto;
-  box-shadow: 10px 20px 20px  black;}
+  box-shadow: 10px 20px 20px  black;
+  transition: right 2s .5s ease-in-out;
+  will-change: right;}
+
+.Resume1.is-visible{right:25%;}
   
 .Resume2{
   position: absolute;
@@ -316,7 +320,11 @@ color:black;
     right:25%;
     width: 24%;
     height: auto;
-  box-shadow: 5px 10px 20px  black;}
+  box-shadow: 5px 10px 20px  black;
+  transition: right 2s .5s ease-in-out;
+  will-change: right;}
+
+.Resume2.is-visible{right:16%;}
 
 .Resume3{
   position: absolute;
@@ -324,7 +332,11 @@ color:black;
     right:25%;
     width: 21%;
     height: auto;
-  box-shadow: 5px 10px 20px  black;}
+  box-shadow: 5px 10px 20px  black;
+  transition: right 2s .5s ease-in-out;
+  will-change: right;}
+
+.Resume3.is-visible{right:10%;}
 
 .Resume4{
   position: absolute;
@@ -332,7 +344,11 @@ color:black;
     right:25%;
     width: 21%;
     height: auto;
-  box-shadow: 5px 10px 20px  black;}
+  box-shadow: 5px 10px 20px  black;
+  transition: right 2s .5s ease-in-out;
+  will-change: right;}
+
+.Resume4.is-visible{right:5%;}
 
 .Resume5{
   position: absolute;
@@ -340,7 +356,11 @@ color:black;
     right:25%;
     width: 18%;
     height: auto;
-  box-shadow: 5px 10px 20px  black;}
+  box-shadow: 5px 10px 20px  black;
+  transition: right 2s .5s ease-in-out;
+  will-change: right;}
+
+.Resume5.is-visible{right:2%;}
 
 .Magnifying-Glass{
   position: absolute;
@@ -348,7 +368,15 @@ color:black;
     top:-48%;
     height:50%;
     width:30%;
-  background-color: transparent;}
+  opacity: 0;
+  background-color: transparent;
+  transition: top 2s .5s ease-in-out,
+              opacity .5s .25s ease-in-out;
+  will-change: top, opacity;}
+
+.Magnifying-Glass.is-visible{
+  opacity: 1;
+  top:45%;}
 
 #Scroll2{
   line-height: 0;
@@ -489,140 +517,6 @@ color:black;
   margin:0px;
   background-color: white;}
 
-/*Pag1 Animations*/
-.Page1:hover > .Resume5{
--webkit-animation-name: Anime1; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime1; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime1; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime1; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime1;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume4{
--webkit-animation-name: Anime2; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime2; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime2; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime2; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime2;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume3{
--webkit-animation-name: Anime3; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime3; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime3; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime3; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime3;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume2{
--webkit-animation-name: Anime4; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime4; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime4; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime4; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime4;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover > .Resume1{
--webkit-animation-name: Anime5; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--moz-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime5; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--ms-animation-name: Anime5; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
--o-animation-name: Anime5; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--webkit-animation-iteration-count:1; 
-animation-name: Anime5;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-.Page1:hover >.Mag-area .Magnifying-Glass{
--webkit-animation-name: Anime6; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
--webkit-animation-iteration-count:1; /* Safari 4.0 - 8.0 */
--moz-animation-name: Anime6; 
--moz-animation-duration: 2s; 
--moz-animation-fill-mode: forwards; 
--moz-animation-iteration-count:1; 
--ms-animation-name: Anime6; 
--ms-animation-duration: 2s; 
--ms-animation-fill-mode: forwards; 
--ms-animation-iteration-count:1; 
--o-animation-name: Anime6; 
--o-animation-duration: 2s; 
--o-animation-fill-mode: forwards; 
--o-animation-iteration-count:1; 
-animation-name: Anime6;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;}
-
-
 /* Services */
 .Page-2{
   font-size: 0;
@@ -633,12 +527,11 @@ animation-fill-mode: forwards;}
   margin:0;
   padding:0;
   background-color: #282828;
-overflow: visible;}
+  overflow: visible;}
 
 .Magnifying-Glass2-Back img{
   width:30vw;
-  height:auto;
-}
+  height:auto;}
 
 .Magnifying-Glass2-Back{
   position:absolute;
@@ -734,68 +627,38 @@ animation-timing-function: linear;
 
 .X2_2{
 position: absolute;
-  top:66%;
+  top:65%;
   left:0;
   width:100%;
   height:1%;
 margin:0px;
-box-shadow: 0 0px 10px 5px rgba(255, 255, 0, 0.349), 0 20px 20px 10px rgba(248, 248, 104, 0.363) , 0 30px 30px 20px rgba(253, 253, 139, 0.342), 0 40px 40px 30px rgba(245, 245, 162, 0.342), 0 50px 50px 40px rgba(248, 248, 180, 0.308), 0 60px 60px 50px rgba(255, 255, 236, 0.308);
+box-shadow: 0 0 2vw 1vw rgba(255, 255, 0, 0.349), 0 2vw 2vw 1vw rgba(248, 248, 104, 0.363) , 0 3vw 3vw 2vw rgba(253, 253, 139, 0.342), 0 4vw 4vw 3vw rgba(245, 245, 162, 0.342), 0 5vw 5vw 4vw rgba(248, 248, 180, 0.308), 0 6vw 6vw 5vw rgba(255, 255, 236, 0.308);
 background-color: rgba(255, 255, 0, 0.589);
 z-index:15;}
 
 .X2_3{
   position: absolute;
-    top:36%;
-    left:0;
+    top:40%;
+    left:50%;
     width:50%;
-    height:30%;
+    height:40%;
   margin:0px;
-  background-color: #282828;
+  background-color: #4c495d;
+  transform: skewY(15deg);
   z-index:20;}
 
 .X2_4{
   position: absolute;
     top:40%;
-    left:52%;
-    width:35%;
+    left:0;
+    width:50%;
     height:40%;
-  transform :rotateZ(20deg);
+  transform: skewY(-15deg);
   margin:0px;
-  background-color: #4c495d;
+  background-color: #282828;
   z-index:20;}
 
 .X2_5{
-  position: absolute;
-    top:40%;
-    left:12%;
-    width:35%;
-    height:40%;
-  transform :rotateZ(160deg);
-  margin:0px;
-  background-color: #282828;
-  z-index:20;}
-
-.X2_6{
-  position: absolute;
-    top:60%;
-    left:82%;
-    width:18%;
-    height:35%;
-  margin:0px;
-  background-color: #4c495d;
-  z-index:20;}
-
-.X2_7{
-  position: absolute;
-    top:65%;
-    left:0;
-    width:17%;
-    height:30%;
-  margin:0px;
-  background-color: #282828;
-  z-index:20;}
-
-.X2_8{
   position: absolute;
     top: 0;
     right:0;
@@ -805,7 +668,7 @@ z-index:15;}
   background-color: #4c495d;
 z-index: 10;}
 
-.X2_9{
+.X2_6{
   position: absolute;
     top:13%;
     left:3%;
@@ -815,7 +678,7 @@ z-index: 10;}
   background-color: #282828;}
 
 
-.Para2{
+#Para2{
   font-size: 1.25vw!important;
   Position:absolute;
     top:5%;
@@ -826,52 +689,53 @@ z-index: 10;}
   padding: 0;
   z-index: 25;
   color:white;
-  background-color:transparent;animation-name: Anime-Para;
-  }
+  opacity:1;
+  margin: 0;
+  background-color:transparent;
+  transition: margin .75s .25s linear,
+              opacity 1s .25s ease-in-out;
+   will-change: margin, opacity;}
 
-#HP2{
+#P2_H1{
   padding-left: 2%;
   text-transform: uppercase;
     font-size:500%;
   opacity: 0;
-  margin:8% 0 .5% 3%;
-  transition: margin .75s .25s linear,
-              opacity 1s .25s ease-in-out;
-   will-change: margin, opacity; 
-}
+  margin:5% 0 -1% 3%;
+  transition: margin .5s .25s linear,
+              opacity .5s .25s ease-in-out;
+   will-change: margin, opacity; }
 
-#HP2.is-visible {
+#P2_H1.is-visible {
   opacity: 1;
-  margin:4% 0 4.5% 3%;}
+  margin:4% 0 0 3%;}
 
-
-#P1P2{
+#P2_P1{
    line-height: 150%;
    font-size:90%;
   opacity: 0;
-  margin: 6% 2% 0 2%;
+  margin: 6% 2% -2% 2%;
   transition: margin 1s .75s linear,
               opacity 1s .75s ease-in-out;
   will-change: margin, opacity;}
 
-#P1P2.is-visible {
+#P2_P1.is-visible {
   opacity: 1;
-  margin:4% 2% 0 2%;
-}
+  margin:4% 2% 0 2%;}
 
-#P2P2{
+#P2_P2{
   text-align: center;
-  margin-left:2%;
-  margin-right:2%;
    line-height: 150%;
    font-size:90%;
    opacity: 0;
-   transition: opacity 1s .75s ease-in-out;
-  will-change: opacity;}
+   margin:6% 2% -4% 2%;
+   transition: margin 1s .75s linear,
+               opacity 1s .75s ease-in-out;
+  will-change: margin, opacity;}
 
-#P2P2.is-visible {
+#P2_P2.is-visible {
   opacity: 1;
-}
+  margin: 2% 2% 0 2%;}
 
 #Low3{
   padding:0;
@@ -882,16 +746,250 @@ z-index: 10;}
     width:auto;
     height:auto;
   opacity: 0;
-  margin: 4% 0 -2% 45.5%;
-  transition: margin 1.5s .25s ease-in-out,
-              opacity 1.5s .25s ease-in-out;
+  margin: 6% 0 -4% 45.5%;
+  transition: margin 2s .25s ease-in-out,
+              opacity 2s .25s ease-in-out;
   will-change: margin, opacity;}
 
 #Low3.is-visible {
   opacity: 1;
-  margin:2% 0% 0% 45.5%;
+  margin:2% 0% 0% 45.5%;}
+
+/* Page3 */
+.Page3{
+  font-size: 0;
+  position: relative;
+  width:100%;
+  height: 46vw;
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+  overflow: hidden;}
+
+.Table1 {
+  font-size: initial;
+  position: absolute;
+    top:14%;
+    width:100%;
+  table-layout: fixed;}
+
+.Table1 a{
+  font-family: 'Lato', sans-serif;
+  text-decoration:none;
+  color:black;}
+
+.Table1 h1{
+  font-size: 1.5vw;
+  color:white;
+  vertical-align: center;
+  margin:20% 0 0 0;
+  background-color: #818181;
+  height: 12vw;
+  padding:40% 0 0 0;}
+
+.P3_H1, .P3_H2, .P3_H3{padding:40.5% 0 0 0!important;}
+
+.Table1 img{
+    width:55%;
+  margin:30% 0 0 0;
+  padding:0;
+  width: 10vw;
+  height: 10vw;}
+
+.Table1 td{
+  text-align: center;
+  letter-spacing: 0;
+  padding: 0;
+  font-size:60%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transition: transform .8s;
+-webkit-transition: transform .8s;
+-moz-transition: transform .8s;
+-ms-transition: transform .8s;
+-o-transition: transform .8s;}
+
+.Table1 td:hover{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);}
+
+.Table1 td div{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;}
+
+.Table1 tr{
+  perspective: 1500px;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;}
+
+.S1-Back, .S2-Back, .S3-Back, .S4-Back, .S5-Back, .S6-Back{
+  position: absolute;
+    top:15%;
+transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-ms-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);}
+
+.S1-Back a p{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+    font-size: 200%;
+  top:-40px;
+  padding: 10px;
+  margin:0;}
+
+/* Client List */
+.Page4{
+  position: relative;
+  width:100%;
+  height: 46vw;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow: hidden;}
+
+.P4_H1{
+  font-size:250%!important;
+  text-transform: uppercase;
+  text-align: center;
+  color:black;
+  background-color: white;
+  margin:0;
+  padding-top:2%;
+  font-family: 'Lato', sans-serif;}
+
+.Page4 hr{margin-bottom: 5%;}
+
+.Page4 img{
+  margin:0 0 5vw 8vw;
+  height:5vw;
+  width:12vw;
+  border-color: #818181;
+  border-style: solid;
+  border-width: 1px;
+  padding:4px;
+  transition: box-shadow .25s;}
+
+.Page4 img:hover{ box-shadow: 0 0 20px rgb(63, 63, 63);}
+
+/*Life At Buleocean*/
+.Page5{
+  position: relative;
+  width:100%;
+  height: 46vw;
+  margin: 0;
+  padding: 0;
+  /*background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;*/
+  background-color: white;}
+
+.Image5{
+  display: inline-block;
+  position: relative;
+    top:15%;
+    left:1%;
+    width:60%;
+    height:90%;
+  padding:0!important;
+  opacity: 0;
+  margin: 0;
+  transition: margin .75s .1s linear,
+              opacity .75s .1s ease-in-out;
+  will-change: margin, opacity; }
+  
+.Image5.is-visible {opacity: 1;}
+
+.Para3{
+  position: absolute;
+    top:10%;
+    left:45%;
+    width:50%;
+    font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;}
+
+.P5_H1{
+  text-transform: uppercase;
+    font-size:300%;
+  opacity: 0;
+  margin:4% 0 0 0;
+  transition: margin .75s .5s linear,
+              opacity 1s .5s ease-in-out;
+   will-change: margin, opacity; }
+  
+.P5_H1.is-visible {opacity: 1;}
+
+#P5_P1{
+  line-height: 200%;
+  opacity: 0;
+  margin: 8% 0 -6% 0;
+  transition: margin .75s .5s linear,
+              opacity 1s .5s ease-in-out;
+   will-change:  margin, opacity;}
+  
+#P5_P1.is-visible {
+  opacity: 1;
+  margin: 2% 0 0 0;
 }
 
+/*Conact Us*/
+.Page6{
+  position: relative;
+  width:100%;
+  height: 48vw;
+  margin: 0;
+  padding: 0;
+  /*background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;*/
+  background-color: white;}
+
+#H1P4{
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+    top:0;
+  text-transform: uppercase;
+  font-size:300%;
+  font-weight: 100;
+  opacity: 0;
+  margin:5% 0 0 35%;
+  transition: margin .75s .5s linear,
+              opacity 1s .5s ease-in-out;
+   will-change: margin, opacity; 
+}
+  
+#H1P4.is-visible {opacity: 1;}
+
+.Map{
+  position: absolute;
+    top:20%;
+    width:100%;
+  margin:0 0 0 0;
+  height:400px;}
+
+.footer{
+  position: absolute;
+    bottom:0px;
+    width:100%;
+  margin:0;
+  background-color: rgb(12, 0, 50);
+  color:rgb(136, 136, 136);
+  padding:8px 0 8px 0;
+  font-family: 'Lato', sans-serif;
+  font-size:70%;
+  font-weight: 100;
+}
 
   /*Animation definations*/
 /* Standard syntax */
