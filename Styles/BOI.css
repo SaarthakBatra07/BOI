@@ -77,32 +77,32 @@ body {
 
 .Navigation_menu ul li:nth-child(5){
   float:left;
-  padding-top:2px;
+  padding-top:.1vw;
   margin:0;}
 
 .Navigation_menu ul li:nth-child(5) img{ 
 width:20vw;
 height:3vw;
-padding:4px;
+padding:.2vw;
 margin: 0;}
 
 .Navigation_menu ul li{
   float:right;
+  max-height: 4vw;
   list-style-type: none;
   width:auto;
   height: auto;
-  padding:0;
-  margin:1% 2% 0 2%;}
+  padding-top:1vw;
+  margin:0 2% 0 2%;}
 
 .Navigation_menu ul li a{
-  /*background-color: azure;*/
+  vertical-align: text-top;;
   text-decoration: none;
   color: white;
   font-family: 'Lato', sans-serif;
   text-transform: capitalize;
   font-size: 1.25vw;
   margin:0;
-  padding:2px;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
   -ms-transition: color .25s;
@@ -677,7 +677,6 @@ z-index: 10;}
   margin:0px;
   background-color: #282828;}
 
-
 #Para2{
   font-size: 1.25vw!important;
   Position:absolute;
@@ -863,7 +862,7 @@ transform: rotateY(180deg);
   overflow: hidden;}
 
 .P4_H1{
-  font-size:250%!important;
+  font-size:3vw!important;
   text-transform: uppercase;
   text-align: center;
   color:black;
@@ -923,7 +922,7 @@ transform: rotateY(180deg);
 
 .P5_H1{
   text-transform: uppercase;
-    font-size:300%;
+    font-size:4vw;
   opacity: 0;
   margin:4% 0 0 0;
   transition: margin .75s .5s linear,
@@ -933,7 +932,8 @@ transform: rotateY(180deg);
 .P5_H1.is-visible {opacity: 1;}
 
 #P5_P1{
-  line-height: 200%;
+  line-height: 2vw;
+  font-size: 1.2vw;
   opacity: 0;
   margin: 8% 0 -6% 0;
   transition: margin .75s .5s linear,
@@ -942,11 +942,11 @@ transform: rotateY(180deg);
   
 #P5_P1.is-visible {
   opacity: 1;
-  margin: 2% 0 0 0;
-}
+  margin: 2% 0 0 0;}
 
 /*Conact Us*/
 .Page6{
+  line-height: 0;
   position: relative;
   width:100%;
   height: 48vw;
@@ -960,46 +960,26 @@ transform: rotateY(180deg);
   position: absolute;
     top:0;
   text-transform: uppercase;
-  font-size:300%;
+  font-size:4vw;
   font-weight: 100;
   opacity: 0;
   margin:5% 0 0 35%;
   transition: margin .75s .5s linear,
               opacity 1s .5s ease-in-out;
-   will-change: margin, opacity; 
-}
+   will-change: margin, opacity; }
   
 #H1P4.is-visible {opacity: 1;}
 
 .Map{
-  position: absolute;
+  line-height: 0;
+  position: relative;
     top:20%;
     width:100%;
   margin:0 0 0 0;
   height:400px;}
 
-.footer{
-  position: absolute;
-    bottom:0px;
-    width:100%;
-  margin:0;
-  background-color: rgb(12, 0, 50);
-  color:rgb(136, 136, 136);
-  padding:8px 0 8px 0;
-  font-family: 'Lato', sans-serif;
-  font-size:70%;
-  font-weight: 100;
-}
-
   /*Animation definations*/
 /* Standard syntax */
-@keyframes Anime1 {100% { right:2%;}}
-@keyframes Anime2 {100% { right:5%;}}
-@keyframes Anime3 {100% { right:10%;}}
-@keyframes Anime4 {100% { right:16%;}}
-@keyframes Anime5 {100% { right:25%;}}
-@keyframes Anime6 {100% { top:45%;}}
-@keyframes Anime7 {100% { left:0%}}
 @keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 @keyframes Anime-Scroll3 {0%{color:white;} 50%{color:black;} 100% {color:white;}}
 @keyframes Anime-Home {0% {color:white;} 50%{font-weight: bold;} 100% {color:white;}}
@@ -1009,40 +989,15 @@ transform: rotateY(180deg);
 @keyframes Anime-Para {0% {margin-left:-10%;opacity:0;background-color: transparent;} }
 @keyframes Anime-Head {0% {background-color: transparent;} }
 
-   /* Safari 4.0 - 8.0 */
-@-webkit-keyframes Anime1 {100% { right:2%;}}
-@-webkit-keyframes Anime2 {100% { right:5%;}}
-@-webkit-keyframes Anime3 {100% { right:10%;}}
-@-webkit-keyframes Anime4 {100% { right:16%;}}
-@-webkit-keyframes Anime5 {100% { right:25%;}}
-@-webkit-keyframes Anime6 {100% { top:45%;}}
-@-webkit-keyframes Anime7 {100% { left:0%}}
+
 @-webkit-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-@-moz-keyframes Anime1 {100% { right:2%;}}
-@-moz-keyframes Anime2 {100% { right:5%;}}
-@-moz-keyframes Anime3 {100% { right:10%;}}
-@-moz-keyframes Anime4 {100% { right:16%;}}
-@-moz-keyframes Anime5 {100% { right:25%;}}
-@-moz-keyframes Anime6 {100% { top:45%;}}
-@-moz-keyframes Anime7 {100% { left:0%}}
+
 @-moz-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-@-ms-keyframes Anime1 {100% { right:2%;}}
-@-ms-keyframes Anime2 {100% { right:5%;}}
-@-ms-keyframes Anime3 {100% { right:10%;}}
-@-ms-keyframes Anime4 {100% { right:16%;}}
-@-ms-keyframes Anime5 {100% { right:25%;}}
-@-ms-keyframes Anime6 {100% { top:45%;}}
-@-ms-keyframes Anime7 {100% { left:0%}}
+
 @-ms-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-@-o-keyframes Anime1 {100% { right:2%;}}
-@-o-keyframes Anime2 {100% { right:5%;}}
-@-o-keyframes Anime3 {100% { right:10%;}}
-@-o-keyframes Anime4 {100% { right:16%;}}
-@-o-keyframes Anime5 {100% { right:25%;}}
-@-o-keyframes Anime6 {100% { top:45%;}}
-@-o-keyframes Anime7 {100% { left:0%}}
+
 @-o-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
