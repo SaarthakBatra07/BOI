@@ -377,7 +377,7 @@ z-index: 5;}
 .Magnifying-Glass{
   position: absolute;
     left:55%;
-    top:-48%;
+    top: 0;
     height:50%;
     width:30%;
   opacity: 0;
