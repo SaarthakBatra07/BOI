@@ -309,7 +309,7 @@ z-index: 5;}
   font-size: 0;
   position: relative;
   width:100%;
-  height: 100vh;
+  height: 46vw;
   margin: 0;
   padding: 0;
   background-color: white;} 
@@ -319,7 +319,7 @@ z-index: 5;}
     top:12%;
     right:25%;
     width: 24%;
-    height: 74%;
+    height: auto;
   box-shadow: 10px 20px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -331,7 +331,7 @@ z-index: 5;}
     top:15%;
     right:25%;
     width: 24%;
-    height: 68%;
+    height: auto;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -343,7 +343,7 @@ z-index: 5;}
     top:16%;
     right:25%;
     width: 21%;
-    height: 64%;
+    height: auto;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -355,7 +355,7 @@ z-index: 5;}
     top:19%;
     right:25%;
     width: 21%;
-    height: 58%;
+    height: auto;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -367,7 +367,7 @@ z-index: 5;}
     top:21%;
     right:25%;
     width: 18%;
-    height: 54%;
+    height: auto;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -381,7 +381,6 @@ z-index: 5;}
     height:50%;
     width:30%;
   opacity: 0;
-  margin:0;
   background-color: transparent;
   transition: top 2s .5s ease-in-out,
               opacity .5s .25s ease-in-out;
@@ -1010,3 +1009,12 @@ transform: rotateY(180deg);
 @-o-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
 
+/*For mobile small screen devices*/
+@media screen and (max-width: 500px) {
+    #Main{
+          font-size:400%;
+          letter-spacing: 2px;
+}
+   
+  }
+  
