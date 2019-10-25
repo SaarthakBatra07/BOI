@@ -26,12 +26,14 @@ body {
     margin: 0;}
 
 .Header ul li{
+  text-decoration: none;
     line-height: 0;
     padding: 0;
     margin: 0px;
     display: inline-block;}
 
 .Header ul li:nth-child(3){
+    text-decoration: none;
     float: right;
       height:auto;
       width:auto;
@@ -39,26 +41,26 @@ body {
   /*background-color: transparent;*/}
 
 .Header ul li p{
+    text-decoration: none;
     position: relative;
       bottom:4px; 
     color:white;
     line-height: 0px;
     padding:0;
-    margin:0;
-}
+    margin:0;}
 
 .Header ul li p img{
     position: relative;
       top:3px;
     background-color: white;
     border-radius: 100%;
-    padding: 1px;
-  }
+    padding: 1px;}
 
 /* Navigation Menu */
 .Navigation_menu{
   /*font-size: 0;*/
   position: sticky;
+  position: -webkit-sticky;
     top:0px;
     left:0px;
   height:4vw;
@@ -135,47 +137,64 @@ color:black;
 
 /*Main Home Screen*/
 .Home{
-    position: relative;
+  position: relative;
     width:100%;
-    height:46vw;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    z-index: 5;}
+    height:100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+z-index: 5;}
 
 .Home img{
-    line-height: 0;
-    margin: 0;
-    padding: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
     width:100%;
     height: 100%}
 
-.Home-Front{
-    position: absolute;
-      top:0;
-    margin: 0;
-    padding: 0;
+.Home_Front{
+    display:table;
+  position: absolute;
+    top:0;
     height:100%;
-    background-color: rgba(0, 10, 15, 0.26)!important;}
-  
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 10, 15, 0.26)!important;}
+
+.Home_Front_{
+  display:table-cell;
+  vertical-align: middle;}
+
+.Home_Info{
+    display: table;
+    vertical-align: middle;
+  position: absolute;
+    top:0;
+    width:100%;
+    height:auto;}
+
+.Home_Info_{
+  display: table-cell;
+  vertical-align: middle;
+  height:100vh;}
+
 #Main{
     position: relative;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-      font-size:6vw;
+      font-size:500%;
       letter-spacing: 2px;
     width:100%;
     text-align: center;
     color:white;
     opacity: 0;
-    margin:18% 0 -3% 0;
-    transition: margin .5s .25s ease-in-out,
-                opacity 1s .25s ease-in-out;
-    will-change: margin, opacity;}
+    padding: 0;
+    margin:0;
+    transition: opacity 1s .25s ease-in-out;
+    will-change: opacity;}
 
-#Main.is-visible {
-  opacity: 1;
-  margin:15% 0 0 0;}
+#Main.is-visible {opacity: 1;}
 
 #Sub{
     text-align: center;
@@ -184,45 +203,38 @@ color:black;
       line-height: 1vw;
       letter-spacing: .25vw;
       word-spacing: .2vw;
-      font-size:.75vw;
+      font-size:50%;
     width:100%;
     color:white;
     opacity: 0;
-    margin:7.5% 0 -5% 0;
+    margin: 7.5vh 0 -2.5vh 0;
     transition: margin 1s .25s ease-in-out,
                 opacity 1s .5s ease-in-out;
     will-change: margin, opacity;}
 
 #Sub.is-visible {
   opacity: 1;
-  margin:2.5% 0 0 0;}
+  margin: 5vh 0 0 0;}
 
 #Low{
     text-align: center;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
       letter-spacing: .15vw;
-      font-size:1.5vw; 
+      font-size:150%; 
   color:white;
   opacity: 0;
-  margin:15% 0 -7% 0;
+  margin:25vh 0 -5vh 0;
   transition: margin 1.5s .25s ease-in-out,
               opacity 1.5s .75s ease-in-out;
   will-change: margin, opacity;}
 
 #Low.is-visible {
   opacity: 1;
-  margin:8% 0 0 0;}
-
-.Home-Front p:nth-child(4){
-    position: relative;
-    margin:2% 0 0 0;
-    width:100%;
-    text-align: center;
-    line-height: 0px;}
-
+  margin:20vh 0 0 0;}
 
 #Scroll{
+  line-height: 0;
     position: absolute;
       left:48%;
   text-decoration: none;  
@@ -231,7 +243,7 @@ color:black;
   border-color: black;
   border-width: 2px;
   border-style: solid;
-  margin: -2px 0 2px 0;
+  margin: 0;
   padding: 0.4em .4em .9em .4em;/*.1em .4em .2em .4em*/
   color:Black;
   background-color: transparent;
@@ -285,9 +297,9 @@ color:black;
 
 .Counter{
   position: absolute;
-    top:44vw;
+    top:100vh;
     width:100%;
-    height:6vw;
+    height:5vw;
   margin: 0;
   padding: 0;
   background-color:white;}
@@ -297,7 +309,7 @@ color:black;
   font-size: 0;
   position: relative;
   width:100%;
-  height: 46vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: white;} 
@@ -307,7 +319,7 @@ color:black;
     top:12%;
     right:25%;
     width: 24%;
-    height: auto;
+    height: 74%;
   box-shadow: 10px 20px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -319,7 +331,7 @@ color:black;
     top:15%;
     right:25%;
     width: 24%;
-    height: auto;
+    height: 68%;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -331,7 +343,7 @@ color:black;
     top:16%;
     right:25%;
     width: 21%;
-    height: auto;
+    height: 64%;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -343,7 +355,7 @@ color:black;
     top:19%;
     right:25%;
     width: 21%;
-    height: auto;
+    height: 58%;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -355,7 +367,7 @@ color:black;
     top:21%;
     right:25%;
     width: 18%;
-    height: auto;
+    height: 54%;
   box-shadow: 5px 10px 20px  black;
   transition: right 2s .5s ease-in-out;
   will-change: right;}
@@ -369,6 +381,7 @@ color:black;
     height:50%;
     width:30%;
   opacity: 0;
+  margin:0;
   background-color: transparent;
   transition: top 2s .5s ease-in-out,
               opacity .5s .25s ease-in-out;
@@ -486,9 +499,7 @@ color:black;
    transition: opacity .75s .5s ease-in-out;
   will-change: opacity;}
 
-#P2P1.is-visible {
-  opacity: 1;
-}
+#P2P1.is-visible {opacity: 1;}
 
 .X1_1{
   position: absolute;
@@ -556,16 +567,9 @@ color:black;
   -moz-transition: border-color, font-weight, background-color .25s;
   -ms-transition: border-color, font-weight, background-color .25s;
   -o-transition: border-color, font-weight, background-color .25s;
-  transition: border-color, font-weight, background-color .25s;
-  animation-name: Anime-Scroll3_;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;}
+  transition: border-color, font-weight, background-color .25s;}
 
-#Scroll3:hover{
-  background-color: white;
-  color: black;}
+#Scroll3:hover{background-color: white; color: black;}
 
 .Front1{
   position: absolute;
@@ -588,27 +592,27 @@ color:black;
   padding:0px;
   z-index:20;
   background-color: transparent;
-animation-name: Anime7;
+animation-name: Anime_Man;
 animation-duration: .5s;
 animation-iteration-count: infinite;
 animation-fill-mode: backwards;
 animation-timing-function: linear;
--webkit-animation-name: Anime7;
+-webkit-animation-name: Anime_Man;
 -webkit-animation-duration: .5s;
 -webkit-animation-iteration-count: infinite;
 -webkit-animation-fill-mode: backwards;
 -webkit-animation-timing-function: linear;
--moz-animation-name: Anime7;
+-moz-animation-name: Anime_Man;
 -moz-animation-duration: .5s;
 -moz-animation-iteration-count: infinite;
 -moz-animation-fill-mode: backwards;
 -moz-animation-timing-function: linear;
--ms-animation-name: Anime7;
+-ms-animation-name: Anime_Man;
 -ms-animation-duration: .5s;
 -ms-animation-iteration-count: infinite;
 -ms-animation-fill-mode: backwards;
 -ms-animation-timing-function: linear;
--o-animation-name: Anime7;
+-o-animation-name: Anime_Man;
 -o-animation-duration: .5s;
 -o-animation-iteration-count: infinite;
 -o-animation-fill-mode: backwards;
@@ -807,11 +811,11 @@ transform-style: preserve-3d;
 -moz-transform-style: preserve-3d;
 -ms-transform-style: preserve-3d;
 -o-transform-style: preserve-3d;
-transition: transform .8s;
--webkit-transition: transform .8s;
--moz-transition: transform .8s;
--ms-transition: transform .8s;
--o-transition: transform .8s;}
+transition: transform .5s;
+-webkit-transition: transform .5s;
+-moz-transition: transform .5s;
+-ms-transition: transform .5s;
+-o-transition: transform .5s;}
 
 .Table1 td:hover{
   transform: rotateY(180deg);
@@ -835,27 +839,40 @@ transition: transform .8s;
   -o-perspective: 1500px;}
 
 .S1-Back, .S2-Back, .S3-Back, .S4-Back, .S5-Back, .S6-Back{
+  display: table;
+  vertical-align: middle;
   position: absolute;
-    top:15%;
+    top:0;
+  background-color: #818181;
+  height:100%;
+  padding:20% 0;
 transform: rotateY(180deg);
 -webkit-transform: rotateY(180deg);
 -moz-transform: rotateY(180deg);
 -ms-transform: rotateY(180deg);
 -o-transform: rotateY(180deg);}
 
-.S1-Back a p{
+.S1-Back a p,.S2-Back a p,.S3-Back a p,.S4-Back a p,.S5-Back a p,.S6-Back a p{
+  background-color:white;
   position: relative;
   font-family: 'Lato', sans-serif;
-    font-size: 200%;
-  top:-40px;
-  padding: 10px;
-  margin:0;}
+  font-size: 200%;
+  padding: 0 5% 0 5%;
+  margin:0;
+  text-align: center;}
 
-/* Client List */
+.S1-Back a,.S2-Back a,.S3-Back a,.S4-Back a,.S5-Back a,.S6-Back a {
+    position: relative;
+    display: table-cell;
+    background-color:white;
+    vertical-align: middle;}
+
+ /* Client List */
 .Page4{
+  font-size:0;
   position: relative;
   width:100%;
-  height: 46vw;
+  height: auto;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -874,7 +891,7 @@ transform: rotateY(180deg);
 .Page4 hr{margin-bottom: 5%;}
 
 .Page4 img{
-  margin:0 0 5vw 8vw;
+  margin:0 0 5vw 6vw;
   height:5vw;
   width:12vw;
   border-color: #818181;
@@ -887,6 +904,7 @@ transform: rotateY(180deg);
 
 /*Life At Buleocean*/
 .Page5{
+  font-size: 0;
   position: relative;
   width:100%;
   height: 46vw;
@@ -896,18 +914,14 @@ transform: rotateY(180deg);
   background-color: white;}
 
 .Image5{
-  display: inline-block;
   position: relative;
-    top:15%;
-    left:1%;
     width:60%;
     height:90%;
-  padding:0!important;
+  padding:2.75% 0 0 0;
   opacity: 0;
-  margin: 0;
-  transition: margin .75s .1s linear,
-              opacity .75s .1s ease-in-out;
-  will-change: margin, opacity; }
+  margin: 2.5% 0 0 1%;
+  transition: opacity .75s .1s ease-in-out;
+  will-change: opacity; }
   
 .Image5.is-visible {opacity: 1;}
 
@@ -963,7 +977,7 @@ transform: rotateY(180deg);
   font-size:4vw;
   font-weight: 100;
   opacity: 0;
-  margin:5% 0 0 35%;
+  margin:7% 0 0 35%;
   transition: margin .75s .5s linear,
               opacity 1s .5s ease-in-out;
    will-change: margin, opacity; }
@@ -973,31 +987,26 @@ transform: rotateY(180deg);
 .Map{
   line-height: 0;
   position: relative;
-    top:20%;
     width:100%;
-  margin:0 0 0 0;
+  margin: 2.5% 0 0 0;
+  padding: 5% 0 0 0;
   height:400px;}
 
   /*Animation definations*/
 /* Standard syntax */
+@keyframes Anime_Man {100% {left:0%}}
 @keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
-@keyframes Anime-Scroll3 {0%{color:white;} 50%{color:black;} 100% {color:white;}}
-@keyframes Anime-Home {0% {color:white;} 50%{font-weight: bold;} 100% {color:white;}}
-@keyframes Anime-Home3_1 {0% {margin:15% 0% 2% 8%;opacity:0;} }
-@keyframes Anime-Home3_2 {0% {margin:5% 0% 20% 0%;opacity:0;} }
-@keyframes Anime-Home3_3 {0% {margin:5% 0% 0% 0%;opacity:0;} }
-@keyframes Anime-Para {0% {margin-left:-10%;opacity:0;background-color: transparent;} }
-@keyframes Anime-Head {0% {background-color: transparent;} }
 
-
+@-webkit-keyframes Anime_Man {100% {left:0%}}
 @-webkit-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-
+@-moz-keyframes Anime_Man {100% {left:0%}}
 @-moz-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-
+@-ms-keyframes Anime_Man {100% {left:0%}}
 @-ms-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
 
-
+@-o-keyframes Anime_Man {100% {left:0%}}
 @-o-keyframes Anime-Scroll {0% {padding: .6em .4em .7em .4em;} 25% {padding: .4em .4em .9em .4em;} 50% {padding: .6em .4em .7em .4em;} 75%{padding: .4em .4em .9em .4em;} 100% {padding: .6em .4em .7em .4em;}}
+
 
