@@ -383,7 +383,7 @@ z-index: 5;}
   opacity: 0;
   background-color: transparent;
   transition: top 2s .5s ease-in-out,
-              opacity .5s .25s ease-in-out;
+              opacity 1.5s .25s ease-in-out;
   will-change: top, opacity;}
 
 .Magnifying-Glass.is-visible{
