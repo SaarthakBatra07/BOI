@@ -37,13 +37,15 @@ body {
     margin: 0px;
     display: inline-block;}
 
-.Header ul li:nth-child(3){
-    text-decoration: none;
+.Header ul li:nth-child(3), .Header ul li:nth-child(4) {  
     float: right;
       height:auto;
       width:auto;
-    margin: 0px;
-  /*background-color: transparent;*/}
+    margin: 0px;}
+
+.Header ul li:nth-child(3) p{
+  margin: 25% 0 0 0;
+  font-size: 1.5em;}
 
 .Header ul li p{
     text-decoration: none;
@@ -341,7 +343,12 @@ color:black;
     top:15%;
     right:2.5%;
     width: 45%;
-    height: auto;}
+    height: auto;
+  opacity: 0;
+  transition:opacity 1s .25s ease-in-out;
+  will-change: opacity; }
+
+.P1_I1.is-visible {opacity: 1;}
 
 
 #Scroll2{
@@ -498,7 +505,11 @@ color:black;
   width: 80%;
   height: 45%;
   z-index: 2;
-}
+  opacity: 0;
+  transition:opacity 1s .25s ease-in-out;
+  will-change: opacity; }
+
+.service.is-visible {opacity: 1;}
 
 #Scroll3{
   padding:2px;
