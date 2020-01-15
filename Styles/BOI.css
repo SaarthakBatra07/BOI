@@ -239,7 +239,8 @@ body{
     text-align: center;
     background-color: rgba(0, 10, 15, 0.26);
     color: white;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    overflow: hidden;}
 
 #Home_H1{
     grid-area: H1;
@@ -515,7 +516,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border-width: 20px;
+    border-width: 1.5vw;
     border-style: ridge;
     border-color: #373737;
     background-color: transparent;
@@ -1167,12 +1168,10 @@ opacity: 1;
 #Pg9_I1 iframe{
     height:35vw;
     width:100%;
-    opacity: 1;
-    transition: opacity 1s .75s linear;
-    will-change: opacity;
 }
 #footer{
     width: 100%;
+    font-size: 1vw;
     background-color: rgb(0, 13, 32);
     text-align: left;
     color: #c1c8e4;
@@ -1181,4 +1180,7 @@ opacity: 1;
 /*For mobile small screen devices*/
 @media screen and (max-width: 1000px) {
     body{--height: 48vw;}
+}
+@media screen and (max-width: 768px) {
+    .Scroll_img{visibility: hidden;}
 }
