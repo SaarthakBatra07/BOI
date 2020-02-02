@@ -1440,13 +1440,8 @@ body {
 
 /*For mobile small screen devices*/
 
-@media screen and (max-width: 1000px) {
-    body {
-        --height: 48vw;
-    }
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     body {
         --height: 100vh;
     }
