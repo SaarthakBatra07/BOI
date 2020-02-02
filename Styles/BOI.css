@@ -139,9 +139,21 @@ body {
     padding: .25em 1.7em 0 1.7em;
 }
 
-.Nav_menu a:first-child img {
+#Logo_Desk {
     height: 4vw;
     width: auto;
+}
+#Logo_Mob {
+    display: none;
+}
+
+.Mob_Nav_button{
+    display: none;
+}
+.Mob_Nav_button p{
+    font-size: 5vw;
+    margin: 80% 0 0 0;
+    padding: 0;
 }
 
 #Item1:hover,
@@ -341,10 +353,6 @@ body {
 #Home_H1 {
     grid-area: H1;
     opacity: 0;
-    font-size: 5vw;
-    letter-spacing: .25vw;
-    word-spacing: .25vw;
-    letter-spacing: 2px;
     margin: 0;
     padding: 0;
     transition: opacity 1s .25s linear;
@@ -356,16 +364,15 @@ body {
 }
 
 #Home_H1 p {
+    font-size: 5vw;
+    word-spacing: .25vw;
+    letter-spacing: 2px;
     margin: 5% 0 0 0;
     padding: 0;
 }
 
 #Home_H2 {
     grid-area: H2;
-    line-height: 2.5vw;
-    letter-spacing: .25vw;
-    word-spacing: .25vw;
-    font-size: .8vw;
     padding: 0;
     opacity: 0;
     margin: 5vw 0 -2.5vw 0;
@@ -379,14 +386,16 @@ body {
 }
 
 #Home_H2 p {
+    line-height: 2.5vw;
+    letter-spacing: .25vw;
+    word-spacing: .25vw;
+    font-size: .8vw;
     margin: 2.5% 0 0 0;
     padding: 0;
 }
 
 #Home_H3 {
     grid-area: H3;
-    letter-spacing: .25vw;
-    font-size: 2vw;
     padding: 0;
     opacity: 0;
     margin: 5vw 0 -5vw 0;
@@ -395,6 +404,8 @@ body {
 }
 
 #Home_H3.is-visible {
+    letter-spacing: .25vw;
+    font-size: 2vw;
     opacity: 1;
     margin: 0 0 0 0;
 }
@@ -1440,8 +1451,13 @@ body {
 
 /*For mobile small screen devices*/
 
-
 @media screen and (max-width: 1000px) {
+    body {
+        --height: 48vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
     body {
         --height: 100vh;
     }
@@ -1452,80 +1468,80 @@ body {
 .Nav_menu {
     opacity: 1;
 }
-.Nav_menu a:first-child img {
-    height: 30vw;
-    width: 50vw;
+
+#Logo_Desk {
+    display: none;
 }
 
+#Logo_Mob {
+    display: initial;
+    height: 20vw;
+    height: 15vw;
+}
+.Nav_menu div:last-child a:not(:last-child){
+    display: none;
+}
+.Mob_Nav_button{
+    display: initial;
+    background-color: brown;
+}
+.Nav_menu div:last-child a {
+    padding: 0 15% 0 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .Header div:first-child img {
-    width: 7.5vw;
-    height: 7.5vw;
+    width: 10vw;
+    height: 10vw;
     margin: 3% 0 0 0;
     padding: 0;
 }
 
 .Header div:nth-child(2) img {
-    width: 20vw;
-    height: 10vw;
+    display:none;
 }
 .Header div:last-child img {
-    grid-area: Phn;
-    width: 7.5vw;
-    height: 7.5vw;
-    border-radius: 100%;
-    padding: 20% 10% 0 20%;
+    width: 10vw;
+    height: 10vw;
 }
 
 .Header div:last-child p {
-    grid-area: Number;
-    color: white;
     font-size: 3vw;
-    font-weight: bolder;
-    margin: 5% 2% 0 5%;
-    padding: 15% 0 0 0;
 }
 
-#Home_img_anim {
-    padding: 60% 0 0 0;
-}
+#Home {
+    margin: 0 0 0 0;}
 
 #Home_img_anim img {
-    height: 75vw;
+    height: 80vh;
 }
 
-#Home_Front {
-    display: grid;
-    grid: "header"1.5fr 
-          "  H1  "1fr 
-          "  H2  ".5fr 
-          "  H3  "1fr 
-          "  sc  "1fr 
-          "footer".25fr
-          / 1fr;
-    text-align: center;
+
+#Home_H1 p{
+    font-size: 12.5vw;
+    margin: -5% 0 10% 0;
 }
 
-#Home_H1 {
-    font-size: 7.5vw;
-    letter-spacing: .25vw;
-    word-spacing: .25vw;
-    letter-spacing: 2px;
+#Home_H2 p{
+    line-height: 7.5vw;
+    font-size: 4vw;
 }
 
-#Home_H2 {
-    line-height: 2.5vw;
-    letter-spacing: .25vw;
-    word-spacing: .25vw;
-    font-size: 2vw;
-}
-
-#Home_H3 {
-    letter-spacing: .25vw;
-    font-size: 5vw;
-}
+#Home_H3 p{font-size: 7.5vw;margin: 15% 0 -10% 0;}
 
     
-    .Scroll_img {
-        visibility: hidden;
+.Scroll_img {
+    font-size: 10vw;
+    margin: 15vw 0 0 -7.5vw;
     }
 }
