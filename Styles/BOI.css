@@ -1,4 +1,3 @@
-
 html{scroll-behavior: smooth;}
 
 body{
@@ -559,6 +558,15 @@ body{
     letter-spacing: .25vw;
     color: black;
 }
+.Count_div p{
+    display: inline;
+    font-weight: bolder;
+    font-size: 3vw;
+    color: #373737;
+    margin:-22% 0 0 0;
+    text-align: end;
+    padding-right: 22%;
+}
 .Counter{
     margin: 2% 0 0 0;
     letter-spacing: .25vw;
@@ -573,7 +581,7 @@ body{
 #Page2{
     height:max-content;
     margin: 0;
-    padding: 0;
+    padding: 2% 0 0 0;
     display: grid;
     grid:"Pg2_P1 Pg2_I1" var(--height)
          "sc     sc    "1fr
@@ -696,14 +704,9 @@ body{
     grid-gap: .1vw;
     overflow: hidden;
     background-color: #f4f4f4;}
-
 #Window1, #Window2, #Window3, #Window4, #Window5, #Window6{
-    display: grid;
     margin: .1vw;
     padding: 0;
-    grid:"Frame"100%/
-         1fr;
-    background-color: transparent;
     perspective: 1500px;
     -webkit-perspective: 1500px;
     -moz-perspective: 1500px;
@@ -713,11 +716,11 @@ body{
 #Window1{grid-area: Win1;}#Window2{grid-area: Win2;}#Window3{grid-area: Win3;}#Window4{grid-area: Win4;}#Window5{grid-area: Win5;}#Window6{grid-area: Win6;}
 
 #Win1_Frame, #Win2_Frame, #Win3_Frame, #Win4_Frame, #Win5_Frame, #Win6_Frame{
-    display: grid;
-    grid-area: Frame;
-    grid:"Front"100%
-         "Back"100%/
-         1fr;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    width:16vw;
+    height: 100%;
     box-shadow: 20px 20px 30px 10px rgba(0, 0, 0, 0.466);
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -736,43 +739,38 @@ body{
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);}
-    
-#Win1_Front div:first-child img, #Win2_Front div:first-child img, #Win3_Front div:first-child img, #Win4_Front div:first-child img, #Win5_Front div:first-child img, #Win6_Front div:first-child img{
-    /*grid-area:Main;*/
-    width:max-content; 
-    height: auto; 
-    margin: 0 5% 0 5%; 
-    padding: 0;}
 
 #Win1_Front, #Win2_Front, #Win3_Front, #Win4_Front, #Win5_Front, #Win6_Front{
-    display: grid;
-    grid-area: Front;
-    margin: 0;
+    display:grid;
+    height: 100%;
+    margin: 0 0 0% 0;
     padding: 0;
     grid:"Logo" 50%
          "Heading"50%/
          1fr;
-    background-color: #c0b283;}
+    background-color: #c0b283;
+    backface-visibility: hidden;}
 
-#Win1_Front div:first-child, #Win2_Front div:first-child, #Win3_Front div:first-child, #Win4_Front div:first-child, #Win5_Front div:first-child, #Win6_Front div:first-child{
+#Win1_Front_Img, #Win2_Front_Img, #Win3_Front_Img, #Win4_Front_Img, #Win5_Front_Img, #Win6_Front_Img{
     margin: 0;
     padding: 0;
     grid-area: Logo;
     display: grid;
     grid:"Header Header Header".5fr
-         "Left   Main   Right"2fr
+         "Left   Main   Right" max-content
          "Footer Footer Footer".5fr/
           .5fr max-content .5fr;
-    background-color: white;}
+    background-color: white;
 
-#Win1_Front div:first-child img, #Win2_Front div:first-child img, #Win3_Front div:first-child img, #Win4_Front div:first-child img, #Win5_Front div:first-child img, #Win6_Front div:first-child img{
+} 
+#Win1_Front_Img img, #Win2_Front_Img img, #Win3_Front_Img img, #Win4_Front_Img img, #Win5_Front_Img img, #Win6_Front_Img img{
     grid-area:Main;
     width:14vw; 
     height: auto; 
     margin: 0; 
-    padding: 0;}
-
-#Win1_Front div:nth-child(2), #Win2_Front div:nth-child(2), #Win3_Front div:nth-child(2), #Win4_Front div:nth-child(2), #Win5_Front div:nth-child(2), #Win6_Front div:nth-child(2){
+    padding: 0;}   
+    
+#Win1_Front_H1, #Win2_Front_H1, #Win3_Front_H1, #Win4_Front_H1, #Win5_Front_H1, #Win6_Front_H1{
     margin: 0;
     padding: 0;
     grid-area: Heading;
@@ -781,20 +779,19 @@ body{
          "Main"max-content
          "Footer".5fr/
           1fr;}
-#Win1_Front div:nth-child(2) h1, #Win2_Front div:nth-child(2) h1, #Win3_Front div:nth-child(2) h1, #Win4_Front div:nth-child(2) h1, #Win5_Front div:nth-child(2) h1, #Win6_Front div:nth-child(2) h1{grid-area: Main; font-size: 1.75vw;}
 
+#Win1_Front_H1 h1, #Win2_Front_H1 h1, #Win3_Front_H1 h1, #Win4_Front_H1 h1, #Win5_Front_H1 h1, #Win6_Front_H1 h1{grid-area: Main; font-size: 1.75vw;}
 
 #Win1_Back, #Win2_Back, #Win3_Back, #Win4_Back, #Win5_Back, #Win6_Back{
     display: grid;
-    grid-area: Back;
-    display: grid;
+    position: absolute;
+    height: 100%;
     grid:"Header".5fr
          " Main "7fr
          "Footer".5fr/
          1fr;
-    margin: 0;
     padding: 0;
-    margin: -36.1vw 0 36.1vw 0;
+    margin: 0% 0 0% 0;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -807,6 +804,7 @@ body{
     -o-backface-visibility: hidden;
     background-color: #c0b283;
 }
+
 #Win1_Back a, #Win2_Back a, #Win3_Back a, #Win4_Back a, #Win5_Back a, #Win6_Back a{
     display: grid;
     grid-area: Main;
@@ -820,13 +818,13 @@ body{
     background-color: white;}
 
 #Win1_Back a p, #Win2_Back a p, #Win3_Back a p, #Win4_Back a p, #Win5_Back a p, #Win6_Back a p{
+    display: grid;
     grid-area: Para;
     font-size: 1.5vw;
     color:black;
     margin: 0;
     padding: 0;
-    background-color: transparent;
-}
+    background-color: transparent;}
 /* Client List */
 .Page4{
     display: grid;
@@ -943,13 +941,14 @@ margin: 0 0 5% 0;}
 #Pg6_P1_P1 {
     grid-area: P6_P1;
     opacity: 1;
-    letter-spacing: .1vw;
-    word-spacing: .5vw;
-    line-height: 2vw;
-    font-size: 1.25vw;
+    text-align: center;
+    letter-spacing: .09vw;
+    word-spacing: .45vw;
+    line-height: 1.6vw;
+    font-size: 1.1vw;
     height: 100%;
     margin: 0;
-    padding: 3% 3% 3% 3%;
+    padding: 2% 0 3% 3%;
     opacity: 0;
     transition: opacity 1s .75s linear;
     will-change: opacity;
@@ -959,8 +958,13 @@ margin: 0 0 5% 0;}
     opacity: 1;
 }
 
-#Pg6_P1_P1 b:first-child {
+#Pg6_P1_P1 b{
+    display: block;
+    text-align: center;
+    line-height: 1.5vw;
     font-size: 1.5vw;
+    letter-spacing: .075vw;
+    word-spacing: .1vw;
 }
 
 #Pg6_I1 {
@@ -1033,7 +1037,7 @@ margin: 0 0 5% 0;}
 
 #Pg7_P2 div {
     display: grid;
-    grid: "Image"18vw "Name"2.5vw "Description"2.5vw "Linkedin"18vw/ 1fr;
+    grid: "Image"20vw "Name"2.5vw/ 1fr;
     height: 22.5vw;
     margin: 0 0 2% 5%;
     padding: 0;
@@ -1052,15 +1056,6 @@ margin: 0 0 5% 0;}
     z-index: 10;
 }
 
-#Pg7_P2 div p {
-    grid-area: Description;
-    font-size: 1vw;
-    color: white;
-    margin: 0 0 0 2.5%;
-    padding: 0;
-    z-index: 10;
-}
-
 #Pg7_P2 div img {
     grid-area: Image;
     width: 22.5vw;
@@ -1068,30 +1063,6 @@ margin: 0 0 5% 0;}
     filter: grayscale(100%);
 }
 
-#Pg7_P2 .Pg7_Link {
-    display: grid;
-    grid-area: Linkedin;
-    grid: "Header"1fr "Link"1fr "Footer"1fr/ 1fr;
-    text-align: center;
-    margin: -23vw 0 23vw 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 139, 0.527);
-    transition: opacity .25s;
-    will-change: opacity;
-}
-
-#Pg7_P2 .Pg7_Pic:hover .Pg7_Link {
-    opacity: 1;
-}
-
-#Pg7_P2 div div a {
-    grid-area: Link;
-}
-
-#Pg7_P2 div div a img {
-    width: 5vw;
-    height: 5vw;
-}
 
 
 /*Our Vision*/
@@ -1144,10 +1115,10 @@ margin: 0 0 5% 0;}
 #Pg8_P1_P1 {
     grid-area: P7_P1;
     opacity: 1;
-    letter-spacing: .05vw;
-    word-spacing: .2vw;
-    line-height: 1.7vw;
-    font-size: 1.2vw;
+    letter-spacing: .1vw;
+    word-spacing: .5vw;
+    line-height: 2vw;
+    font-size: 1.25vw;
     height: 100%;
     margin: 0;
     padding: 3% 3% 3% 3%;
@@ -1161,6 +1132,19 @@ margin: 0 0 5% 0;}
 }
 
 #Pg8_P1_P1 b:first-child {
+    display: block;
+    text-align: center;
+    font-size: 1.75vw;
+    letter-spacing: .1vw;
+    word-spacing: .5vw;
+    line-height: 2vw;
+}
+#Pg8_P1_P1 b:last-child {
+    display: block;
+    text-align: center;
+    letter-spacing: .25vw;
+    word-spacing: .4vw;
+    line-height: 2vw;
     font-size: 1.5vw;
 }
 
